@@ -39,7 +39,7 @@ public class SplashActivity extends Activity {
                         .getAccountByHxId(EMClient.getInstance().getCurrentUser());
                 if(account == null) {
                     // 跳转到登录页面
-                    Intent intent = new Intent(SplashActivity.this, LoginAcitivity.class);
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(intent);
                 }else {
                     // 登录成功后的方法
@@ -50,7 +50,7 @@ public class SplashActivity extends Activity {
                 }
             }else {// 没登录过
                 // 跳转到登录页面
-                Intent intent = new Intent(SplashActivity.this, LoginAcitivity.class);
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
             // 结束当前页面

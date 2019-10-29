@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.yain.R;
 import com.yain.controller.activity.LoginAcitivity;
+import com.yain.controller.activity.LoginActivity;
 import com.yain.model.Model;
 import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
@@ -54,7 +55,7 @@ public class SettingFragment extends Fragment {
                         // 更新ui显示
                         Toast.makeText(getActivity(), "退出成功", Toast.LENGTH_SHORT).show();
                         // 回到登录页面
-                        Intent intent = new Intent(getActivity(), LoginAcitivity.class);
+                        Intent intent = new Intent(getActivity(), LoginActivity.class);
                         startActivity(intent);
                         getActivity().finish();
                     });
